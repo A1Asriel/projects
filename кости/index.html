@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <title>Кости онлайн</title>
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>   
+ 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="alert alert-warning" type="alert">
+        <a href="../index.html"><button class="btn btn-md">Назад</button></a><p></p>
+        Бросание костей онлайн. Создали: Ермеков Георгий и Пилипенко Никита
+    </div>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-2 m-top-xs m-top-md m-top-sm">
+        <div class="col-xs-4 col-sm-3">
+            <button class="btn btn-lg" onclick="first()">1 игрок бросает кости</button>
+            <p></p>
+            <div>Последние 3 результата:</div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>1 кубик</th>
+                    <th>2 кубик</th>
+                    <th>Сумма</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td id="first11"></td>
+                    <td id="first12"></td>
+                    <td id="first1s"></td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td id="first21"></td>
+                    <td id="first22"></td>
+                    <td id="first2s"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td id="first31"></td>
+                    <td id="first32"></td>
+                    <td id="first3s"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2 col-sm-3 col-sm-offset-3">
+            <button class="btn btn-lg" onclick="second()">2 игрок бросает кости</button>
+            <p></p>
+            <div>Последние 3 результата:</div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>1 кубик</th>
+                    <th>2 кубик</th>
+                    <th>Сумма</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td id="second11"></td>
+                    <td id="second12"></td>
+                    <td id="second1s"></td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td id="second21"></td>
+                    <td id="second22"></td>
+                    <td id="second2s"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td id="second31"></td>
+                    <td id="second32"></td>
+                    <td id="second3s"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <div class="col-xs-4 col-xs-offset-4 hidden" id="out1">
+      <div class="alert alert-success" id="out">
+    </div>
+      <p></p>
+    </div>   
+    <div class="col-xs-1 col-xs-offset-5">
+    <button class="btn btn-lg" onclick="res()">РЕЗУЛЬТАТ</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.m-top-xs{
+    margin-top: 10px;
+}
+.m-top-md{
+    margin-top: 30px;
+}
+.m-top-sm{
+    margin-top: 20px;
+}
+body{
+    background-image: url(../img/sukno.pn);
+    background-color: rgb(47, 158, 47);
+}
