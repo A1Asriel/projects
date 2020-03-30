@@ -1,6 +1,6 @@
 function zash(){
     res='';
-    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./';
     word=$('#phrase').val().toLowerCase();
     key=$('#key').val().toLowerCase();
     i1=0;
@@ -26,7 +26,7 @@ function zash(){
 }
 function rassh(){
     res='';
-    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./';
     word=$('#phrase').val().toLowerCase();
     key=$('#key').val().toLowerCase();
     i1=0;
