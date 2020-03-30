@@ -1,6 +1,6 @@
 function zash(){
     res='';
-    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./';
+    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./-';
     word=$('#phrase').val().toLowerCase();
     key=$('#key').val().toLowerCase();
     i1=0;
@@ -17,8 +17,8 @@ function zash(){
             i1++;
         }
         c=a+b;
-        if(c>=46){
-            c=c-46;
+        if(c>=47){
+            c=c-47;
         }
         res=res+alph[c];
         $('#res').val(res);
@@ -26,7 +26,7 @@ function zash(){
 }
 function rassh(){
     res='';
-    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./';
+    alph=' абвгдеёжзийклмнопрстуфхцчшщъыьэюя0123456789./-';
     word=$('#phrase').val().toLowerCase();
     key=$('#key').val().toLowerCase();
     i1=0;
@@ -44,7 +44,7 @@ function rassh(){
         }
         c=a-b;
         if(c<0){
-            c=c+46;
+            c=c+47;
         }
         res=res+alph[c];
         $('#res').val(res);
