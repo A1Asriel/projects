@@ -17,8 +17,8 @@ function zash(){
             i1++;
         }
         c=a+b;
-        if(c>=34){
-            c=c-34;
+        if(c>=46){
+            c=c-46;
         }
         res=res+alph[c];
         $('#res').val(res);
@@ -44,7 +44,7 @@ function rassh(){
         }
         c=a-b;
         if(c<0){
-            c=c+34;
+            c=c+46;
         }
         res=res+alph[c];
         $('#res').val(res);
